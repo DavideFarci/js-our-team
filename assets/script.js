@@ -73,7 +73,12 @@ for (i = 0; i < eleMembers.length; i++) {
 
 const eleMembersList = document.querySelector(".members");
 
-for (i = 0; i < eleMembers.length; i++) {
-    let member = eleMembers[i];
-    eleMembersList.innerHTML += `<li>${member.name}, ${member.role}, ${member.photo}</li>`;
+for (let data of eleMembers) {
+    eleMembersList.innerHTML += `<li>${data.name}, ${data.role}, ${data.photo}</li>`;
 };
+
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+// BONUS 2:
+// Organizzare i singoli membri in card/schede (se non avete idee prendete spunto dallo screenshot)
+
