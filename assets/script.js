@@ -76,7 +76,7 @@ const eleMembersList = document.querySelector(".members");
 for (let data of eleMembers) {
     eleMembersList.innerHTML += 
     `<li class="col-12 col-md-6 col-lg-4 py-2 text-center">
-        <div class="content bg-light">
+        <div class="card bg-light">
             ${data.photo}
             <div class="fw-bold">${data.name}</div>
             <div>${data.role}</div>
