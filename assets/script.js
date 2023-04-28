@@ -32,32 +32,32 @@ const eleMembers = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        photo: "wayne-barnett-founder-ceo.jpg",
+        photo: `<img src="assets/img/wayne-barnett-founder-ceo.jpg" alt="">`,
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        photo: "angela-caroll-chief-editor.jpg",
+        photo: `<img src="assets/img/angela-caroll-chief-editor.jpg" alt="">`,
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        photo: "walter-gordon-office-manager.jpg",
+        photo: `<img src="assets/img/walter-gordon-office-manager.jpg" alt="">`,
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        photo: "angela-lopez-social-media-manager.jpg",
+        photo: `<img src="assets/img/angela-lopez-social-media-manager.jpg" alt="">`,
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        photo: "scott-estrada-developer.jpg",
+        photo: `<img src="assets/img/scott-estrada-developer.jpg" alt="">`,
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        photo: "barbara-ramos-graphic-designer.jpg",
+        photo: `<img src="assets/img/barbara-ramos-graphic-designer.jpg" alt="">`,
     },
 ];
 
@@ -79,6 +79,8 @@ for (let data of eleMembers) {
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
+// trasformo la chiave "photo", in un vero tag img html
+
 // BONUS 2:
 // Organizzare i singoli membri in card/schede (se non avete idee prendete spunto dallo screenshot)
 
