@@ -32,32 +32,32 @@ const eleMembers = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        photo: `<img src="assets/img/wayne-barnett-founder-ceo.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/wayne-barnett-founder-ceo.jpg" alt="">`,
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        photo: `<img src="assets/img/angela-caroll-chief-editor.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/angela-caroll-chief-editor.jpg" alt="">`,
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        photo: `<img src="assets/img/walter-gordon-office-manager.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/walter-gordon-office-manager.jpg" alt="">`,
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        photo: `<img src="assets/img/angela-lopez-social-media-manager.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/angela-lopez-social-media-manager.jpg" alt="">`,
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        photo: `<img src="assets/img/scott-estrada-developer.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/scott-estrada-developer.jpg" alt="">`,
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        photo: `<img src="assets/img/barbara-ramos-graphic-designer.jpg" alt="">`,
+        photo: `<img class="w-100" src="assets/img/barbara-ramos-graphic-designer.jpg" alt="">`,
     },
 ];
 
@@ -74,7 +74,14 @@ for (i = 0; i < eleMembers.length; i++) {
 const eleMembersList = document.querySelector(".members");
 
 for (let data of eleMembers) {
-    eleMembersList.innerHTML += `<li>${data.name}, ${data.role}, ${data.photo}</li>`;
+    eleMembersList.innerHTML += 
+    `<li class="col-12 col-md-6 col-lg-4 py-2 text-center">
+        <div class="content bg-light">
+            ${data.photo}
+            <div class="fw-bold">${data.name}</div>
+            <div>${data.role}</div>
+        </div>
+    </li>`;
 };
 
 // BONUS 1:
