@@ -88,6 +88,5 @@ for (let data of eleMembers) {
 // Trasformare la stringa foto in una immagine effettiva
 // trasformo la chiave "photo", in un vero tag img html
 
-// BONUS 2:
-// Organizzare i singoli membri in card/schede (se non avete idee prendete spunto dallo screenshot)
+
 
