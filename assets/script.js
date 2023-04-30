@@ -32,32 +32,32 @@ const eleMembers = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        photo: `<img class="w-100" src="assets/img/wayne-barnett-founder-ceo.jpg" alt="">`,
+        photo: "assets/img/wayne-barnett-founder-ceo.jpg",
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        photo: `<img class="w-100" src="assets/img/angela-caroll-chief-editor.jpg" alt="">`,
+        photo: "assets/img/angela-caroll-chief-editor.jpg",
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        photo: `<img class="w-100" src="assets/img/walter-gordon-office-manager.jpg" alt="">`,
+        photo: "assets/img/walter-gordon-office-manager.jpg",
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        photo: `<img class="w-100" src="assets/img/angela-lopez-social-media-manager.jpg" alt="">`,
+        photo: "assets/img/angela-lopez-social-media-manager.jpg",
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        photo: `<img class="w-100" src="assets/img/scott-estrada-developer.jpg" alt="">`,
+        photo: "assets/img/scott-estrada-developer.jpg",
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        photo: `<img class="w-100" src="assets/img/barbara-ramos-graphic-designer.jpg" alt="">`,
+        photo: "assets/img/barbara-ramos-graphic-designer.jpg",
     },
 ];
 
@@ -77,7 +77,7 @@ for (let data of eleMembers) {
     eleMembersList.innerHTML += 
     `<li class="col-12 col-md-6 col-lg-4 py-2 text-center">
         <div class="card bg-light">
-            ${data.photo}
+            <img class="w-100" src="${data.photo}" alt="">
             <div class="fw-bold">${data.name}</div>
             <div>${data.role}</div>
         </div>
